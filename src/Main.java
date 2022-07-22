@@ -2,30 +2,32 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-     // Task 1_1
-        int [] array = new int [3];
-         array[0] = 1;
-         array[1] = 2;
-         array[2] = 3;
-        System.out.println(Arrays.toString(array));
+        // Task 1+2+3
 
-        // Task 1_2
-        double[] array2 = {1.57, 7.654, 9.986};
-        array2[0] = 1.57;
-        array2[1] = 7.654;
-        array2[2] = 9.986;
-        System.out.println(Arrays.toString(array2));
+        int[] array = new int[3];
+        array[0] = 1;
+        array[1] = 2;
+        array[2] = 3;
+            System.out.println(Arrays.toString(array));
+        for (int i = array.length - 1; i > 0; i--)
+            System.out.print(array[i] + ",");
+            System.out.println(array[0]);
 
-        // Task 1_3
+            System.out.println();
 
-        int [] boxes = {2,4,7};
-        int applesBox = boxes[0];
-        int orangesBox = boxes[1];
-        int lemonBox = boxes[2];
-        System.out.println(applesBox);
-        System.out.println(orangesBox);
-        System.out.println(lemonBox);
+        double[] arr = {1.57, 7.654, 9.986};
+            System.out.println(Arrays.toString(arr));
+        for (int y = arr.length-1; y>0 ; y--)
+            System.out.print(arr[y]+", ");
+            System.out.print(arr[0]);
 
+            System.out.println();
+
+        int [] boxes = {5,6,7,8,9};
+            System.out.println(Arrays.toString(boxes));
+        for (int a = boxes.length-1; a>0 ; a--)
+            System.out.print(boxes[a]+", ");
+            System.out.print(boxes[0]);
 
     }
 }
