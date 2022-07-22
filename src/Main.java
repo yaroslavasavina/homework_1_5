@@ -9,10 +9,17 @@ public class Main {
         array[1] = 2;
         array[2] = 3;
             System.out.println(Arrays.toString(array));
-        for (int i = array.length - 1; i > 0; i--)
-            System.out.print(array[i] + ",");
-            System.out.println(array[0]);
+  //      for (int i = array.length - 1; i > 0; i--)
+  //          System.out.print(array[i] + ",");
+  //          System.out.println(array[0]);
 
+          for (int i = 0; i < array.length; i++) {
+            if (i % 2 != 0) {
+            System.out.println(i + 1);
+          } else {
+            System.out.println(i);
+          }
+       }
             System.out.println();
 
         double[] arr = {1.57, 7.654, 9.986};
