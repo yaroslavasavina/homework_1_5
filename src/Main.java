@@ -12,7 +12,7 @@ public class Main {
             if (i < array.length-1) {
                 System.out.print(array[i] + ", ");
             } else {
-                System.out.println(array[2]);
+                System.out.println(array[i]);
             }
         }
         for (int i = array.length-1; i >=0 ; i--) {
